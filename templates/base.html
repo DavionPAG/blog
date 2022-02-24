@@ -18,7 +18,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid navbar-nav">
-      <a class="nav-link active" href="{% url 'post_list' %}" >Blog</a>
+      <a class="nav-link active" href="{% url 'home' %}" >Nuntius</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,6 +29,7 @@
           {% if user.is_authenticated %}
           <a class="nav-link active" aria-current="page" href="{% url 'post_new' %}">New</a>
           {% endif %}
+          <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
         </div>
       </div>
       {% if user.is_authenticated == False %}
