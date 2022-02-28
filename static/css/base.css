@@ -55,3 +55,7 @@ form {
   width: 100%;
   margin: auto;
 }
+
+h6 {
+  display: flex;
+}
